@@ -6,7 +6,7 @@
     </div>
 </template>
 <style lang="sass" scoped>
-    @import "../assets/sass/color_variables.sass"
+    @import "../assets/sass/color-variables.sass"
     @import "../assets/sass/mixins.sass"
 
     .todo

@@ -18,17 +18,19 @@ export default {
 }
 </script>
 <style lang="sass">
-body
-	height: 100vh
-	width: 100%
-	padding: 0
-	margin: 0
-	#app
-		height: 100%
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap')
+	
+	body
+		height: 100vh
 		width: 100%
-		font-family: Avenir, Helvetica, Arial, sans-serif
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: center
+		padding: 0
+		margin: 0
+		font-family: 'Montserrat', sans-serif
+		#app
+			height: 100%
+			width: 100%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
 </style>
