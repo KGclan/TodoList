@@ -5,13 +5,33 @@
     </div>
 </template>
 <style lang="sass" scoped>
+    @import "../assets/sass/color_variables.sass"
+    @import "../assets/sass/mixins.sass"
+    
     .add-todo
-        display: flex
-        flex-direction: column
+        margin-top: 50px
+        @include flex-column
         justify-content: center
-        align-items: center
         .add-todo__input,.add-todo__button
             margin-top: 10px
+        .add-todo__input
+            height: 25px
+            width: 200px
+            border: 1px solid $main-color
+            border-radius: 10px
+            &:focus
+                background: $main-color
+        .add-todo__button
+            background: $btn-color
+            color: $btn-text-color
+            border-radius: 20px
+            border: none
+            height: 25px
+            width: 180px
+            transition: 1s
+            &:hover
+                transition: 1s
+                background: $btn-active-color
 </style>
 <script>
 export default {

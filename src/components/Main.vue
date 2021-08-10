@@ -14,15 +14,15 @@
     </div>
 </template>
 <style lang="sass" scoped>
+    @import "../assets/sass/mixins.sass"
+
     .main
         width: 520px
         height: auto
         border-radius: 20px
         box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.5)
-        display: flex
+        @include flex-column
         justify-content: flex-start
-        align-items: center
-        flex-direction: column
 </style>
 <script>
 import Counter from "@/components/Counter.vue"
@@ -42,7 +42,7 @@ export default {
                 { id: 1, description: 'Купить хлеб', completed: false },
                 { id: 2, description: 'Купить молоко', completed: false },
                 { id: 3, description: 'Купить банан', completed: false },
-                { id: 4, description: 'Купить водку', completed: false },
+                { id: 4, description: 'Купить воду', completed: false },
             ]
         }
     },

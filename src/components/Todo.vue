@@ -6,22 +6,24 @@
     </div>
 </template>
 <style lang="sass" scoped>
+    @import "../assets/sass/color_variables.sass"
+    @import "../assets/sass/mixins.sass"
+
     .todo
         margin-top: 2%
         width: 90%
         height: 8%
-        background: #0E97FB
+        background: $main-color
         padding: 1px 0px 1px 0px
         border-radius: 10px
-        display: flex
-        align-items: center
+        @include flex
         justify-content: space-between
         .todo__p
     .todo_completed
         text-decoration: line-through   
     .todo__remove
-        color: white
-        background: red  
+        color: $btn-text-color
+        background: $btn-remove-color  
         border-radius: 50%
         border: 0
         font-size: 15px   
@@ -29,7 +31,7 @@
         transition: 1s
         &:hover
             transition: 1s
-            background: blue
+            background: $btn-active-color
 </style>
 <script>
 export default {
